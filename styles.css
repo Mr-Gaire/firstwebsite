@@ -1,0 +1,118 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+h1 {
+    color: #333;
+}
+
+/* Paragraph styles */
+p {
+    color: #666;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container with Flexbox layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+/* Responsive design with media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    /* Adjust other styles for smaller screens */
+}
+
+/* Custom font import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Use of custom font */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* CSS variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #ff5733;
+}
+
+/* Button styles with transitions */
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* CSS Grid layout example */
+.grid-item {
+    grid-column: span 2;
+}
+
+/* Transform and transition */
+.box {
+    transform: rotate(45deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.box:hover {
+    transform: rotate(0deg);
+}
+
+/* CSS Variables and gradients */
+.gradient-box {
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Advanced selectors */
+.parent > :first-child {
+    color: red;
+}
+
+li:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Multi-column layout */
+.text {
+    column-count: 3;
+}

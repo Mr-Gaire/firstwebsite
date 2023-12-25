@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Bishal Gaire - Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1H2WJ7XH4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-G1H2WJ7XH4');
+  </script>
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.jpg" alt="Bishal Gaire">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Bishal Gaire">Bishal Gaire</h1>
+
+          <p class="title notranslate" id="motto"></p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <ion-icon name="swap-vertical"></ion-icon>
+        </button>
+
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="hourglass"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+              <time id="age" class="counting-animation"></time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-sharp"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Butwal , Nepal </address>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="person-sharp"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Personality Type</p>
+              <address>ENTJ-A</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          
+
+          
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/bishalgaire075?igsh=NnR6aWMzY3VuNmR6" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/profile.php?id=100073507803580&mibextid=JRoKGi" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar notranslate">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificates</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Travelled</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>More</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="modal-container" data-modal-container>
+        <div class="overlay" data-overlay></div>
+        <button class="modal-close-btn" data-modal-close-btn>
+        </button>
+      </div>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+
+        <section class="about-text content-card">
+          <div id="expandable-section">
+            <p>
+              Meet Bishal Gaire from Nepal a country renowned for its breathtaking beauty, finding joy in traversing the globe and immersing himself in the pages of new books.
+               
+            </p>
+            <div id="more" style="display: none;">
+              <p>
+                
+                His interests span a wide spectrum, encompassing the worlds of science, astrology, philosophy, and the pursuit of knowledge about life. In addition to his intellectual pursuits, he engages in digital marketing and channels his creativity into the art of photo editing. He believes in living in the present, making each moment count as he weaves a vibrant tapestry of travel adventures, intellectual exploration, and creative endeavors that define his unique narrative..
+              </p>
+
+              <p>
+                
+              </p>
+              <p>
+               
+              </p>
+            </div>
+          </div>
+          <center> <button class="more" id="toggle-button" onclick="toggleText()">&darr; &nbsp; &nbsp; Show more &nbsp;
+              &nbsp; &darr;</button> </center>
+        </section>
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Primary Focus</h3>
+
+          <ul class="service-list">
+
+
+            <li class="service-item">
+
+               <div class="service-icon-box">
+                <img src="./assets/images/icon-marketing.svg" alt="marketing icon" width="40">
+              </div>
+
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Digital Marketing</h4>
+
+                <p class="service-item-text">
+                  Creating digital content to promote and sell products
+                        or services online, using strategies like social media, content marketing, SEO, and online advertising.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile Apps & Games</h4>
+
+                <p class="service-item-text">
+                  Creating and developing engaging mobile apps and games for iOS and Android devices.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-frameworks.svg
+                " alt="frameworks icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Development Solutions</h4>
+
+                <p class="service-item-text">
+                  Utilizing JavaScript frameworks like React, Node, Next, Vue and more to build interactive web
+                  applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-books.png" alt="marketing icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Reading Books</h4>
+
+                <p class="service-item-text">
+                 Unlocking knowledge and expanding horizons through the magic of reading books.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+          <br>
+
+          <section class="service">
+
+            <h3 class="h3 service-title">Exploring Creativity</h3>
+
+            <ul class="service-list">
+
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-video.svg" alt="video icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Visual Storytelling</h4>
+
+                  <p class="service-item-text">
+                    Taking and editing photos or videos that tell engaging stories, bringing concepts and ideas to
+                    life visually.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-multimedia.svg" alt="multimedia icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Digital Content Creation</h4>
+
+                  <p class="service-item-text">
+                    Creatiing dynamic digital content, such as 3D models, graphics or animations.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </section>
+
+          <!-- Languages -->
+
+          <h3 class="h3 languages-title">Learning Programming Languages</h3>
+
+          <section class="languages content-card">
+
+            <ul class="languages-list">
+
+              <li class="languages-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="20">20%</data>
+                </div>
+
+                <div class="languages-progress-bg">
+                  <div class="languages-progress-fill" style="width: 20%;"></div>
+                </div>
+
+              </li>
+
+             
+
+             
+
+              <li class="languages-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS</h5>
+                  <data value="15">15%</data>
+                </div>
+
+                <div class="languages-progress-bg">
+                  <div class="languages-progress-fill" style="width: 15%;"></div>
+                </div>
+
+              </li>
+
+              <li class="languages-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="60">60%</data>
+                </div>
+
+                <div class="languages-progress-bg">
+                  <div class="languages-progress-fill" style="width: 60%;"></div>
+                </div>
+
+              </li>
+
+
+            </ul>
+
+          </section>
+
+          <br>
+
+          <h3 class="h3 languages-title">Human Languages</h3>
+
+          <section class="languages content-card">
+
+            <ul class="languages-list">
+
+              <li class="languages-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Nepali</h5>
+                  <data value="fluent">Native</data>
+                </div>
+
+                <div class="languages-progress-bg">
+                  <div class="languages-progress-fill" style="width: 100%;"></div>
+                </div>
+
+              </li>
+
+              <li class="languages-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">English</h5>
+                  <data value="fluent">Fluent</data>
+                </div>
+
+                <div class="languages-progress-bg">
+                  <div class="languages-progress-fill" style="width: 98%;"></div>
+                </div>
+
+              </li>
+
+              <li class="languages-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Hindi</h5>
+                  <data value="fluent">Fluent</data>
+                </div>
+
+                <div class="languages-progress-bg">
+                  <div class="languages-progress-fill" style="width: 98%;"></div>
+                </div>
+
+              </li>
+
+              <li class="languages-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Maitheli</h5>
+                  <data value="fluent">Listening</data>
+                </div>
+                  <div class="languages-progress-bg">
+                  <div class="languages-progress-fill" style="width: 70%;"></div>
+                </div>
+
+                 </li>
+
+                 <div class="title-wrapper">
+                  <h5 class="h5">Spanish</h5>
+                  <data value="fluent">Bilingual</data>
+                </div>
+
+                <div class="languages-progress-bg">
+                  <div class="languages-progress-fill" style="width: 40%;"></div>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </section>
+
+          <br>
+
+          <!-- technologies -->
+
+          <h3 class="h3 technologies-title">Development Skills</h3>
+          <br>
+
+          <section class="technologies content-card" id="tech-skills">
+
+            <ul class="technologies-list has-scrollbar slider ">
+
+              <li class="technologies-item">
+                <img src="./assets/images/html.png" alt="HTML" id="1">
+              </li>
+
+           
+              <li class="technologies-item">
+                <img src="./assets/images/java-script.png" alt="Java Script" id="3">
+              </li>
+
+            
+              <li class="technologies-item">
+                <img src="./assets/images/wordpress.png" alt="Wordpress" id="13">
+              </li>
+ 
+              <li class="technologies-item">
+                <img src="./assets/images/Canva.png" alt="Wordpress" id="13">
+              </li>
+ 
+
+              <li class="technologies-item">
+                <img src="./assets/images/github.png" alt="GitHub" id="14">
+              </li>
+
+              <li class="technologies-item">
+                <img src="./assets/images/git.png" alt="Git" id="15">
+              </li>
+
+              <li class="technologies-item">
+                <img src="./assets/images/photoshop.png" alt="Photoshop" id="16">
+              </li>
+
+            
+              <li class="technologies-item">
+                <img src="./assets/images/blender.png" alt="Blender" id="19">
+              </li>
+
+            </ul>
+
+          </section>
+
+
+          <!--
+          - Hobbies
+        -->
+          <br>
+
+          <section class="hobbies">
+
+            <h3 class="h3 hobbies-title">Favorite Activities</h3>
+
+            <ul class="hobbies-list has-scrollbar">
+
+              <li class="hobbies-item" id="1">
+                <div class="content-card" data-hobbies-item>
+
+                  <figure class="hobbies-avatar-box">
+                    <img src="./assets/images/finances.png" alt="finances" width="60" data-hobbies-avatar>
+                  </figure>
+
+                  <h4 class="h4 hobbies-item-title" data-hobbies-title>Investments</h4>
+
+                  <div class="hobbies-text" data-hobbies-text>
+                    <p>
+                      Exploring Stocks, Crypto and Long-Term Growth Opportunities for Financial Investment
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="hobbies-item" id="2">
+                <div class="content-card" data-hobbies-item>
+
+                  <figure class="hobbies-avatar-box">
+                    <img src="./assets/images/music.png" alt="music" width="60" data-hobbies-avatar>
+                  </figure>
+
+                  <h4 class="h4 hobbies-item-title" data-hobbies-title>Music</h4>
+
+                  <div class="hobbies-text" data-hobbies-text>
+                    <p>
+                      Creating Instrumentals, Mixing and Mastering Tracks and Collaborating with Musicians
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="hobbies-item" id="3">
+                <div class="content-card" data-hobbies-item>
+
+                  <figure class="hobbies-avatar-box">
+                    <img src="./assets/images/traveling.png" alt="traveling" width="60" data-hobbies-avatar>
+                  </figure>
+
+                  <h4 class="h4 hobbies-item-title" data-hobbies-title>Traveling</h4>
+
+                  <div class="hobbies-text" data-hobbies-text>
+                    <p>
+                      Exploring new places, learn about different cultures and create lifelong memories.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="hobbies-item" id="4">
+                <div class="content-card" data-hobbies-item>
+
+                  <figure class="hobbies-avatar-box">
+                    <img src="./assets/images/camera.png" alt="photography" width="60" data-hobbies-avatar>
+                  </figure>
+
+                  <h4 class="h4 hobbies-item-title" data-hobbies-title>Photography</h4>
+
+                  <div class="hobbies-text" data-hobbies-text>
+                    <p>
+                      Capturing precious moments and memories through the lens of a camera.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </section>
+
+          <!-- Next Page -->
+          <div class="pagination-box">
+            <button class="pagination-button" data-nav-link data-target-section="certificates">Next ></button>
+          </div>
+
+      </article>
+
+
+
+
+
+      <!-- Certificates -->
+
+      <article class="certificates" data-page="certificates">
+
+        <header>
+          <h2 class="h2 article-title">My Certificates</h2>
+        </header>
+
+
+        <br><br>
+
+        <!-- Group 1 -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="desktop-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Sorry You Are Not Authorized</h3>
+          </div>
+
+          
+
+          <!-- Next Page -->
+            <div class="pagination-box">
+            <button class="pagination-button" data-nav-link data-target-section="travelled">Next ></button>
+          </div>
+
+
+        </section>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #travelled Portfolio
+      -->
+
+      <article class="travelled" data-page="travelled">
+
+        <header>
+          <h2 class="h2 article-title">Explored</h2>
+        </header>
+
+        <section class="travelled notranslate">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+         
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+            
+
+            </ul>
+
+          </div>
+
+     
+
+<!-- Indian Locations -->
+
+
+
+
+            
+
+<!-- China Locations -->
+
+
+
+
+            <li class="Nepal" data-filter-item data-category="websites">
+              <a href="./assets/images/Mustang.jpeg">
+                <figure class="travelled-img loading">
+                  <img src="./assets/images/Mustang.jpeg" loading="lazy">
+                </figure>
+              </a>
+              <h3 class="travelled-title">Mustang</h3>
+              <p class="travelled-category">Nepal</p>
+              <p class="travelled-development">2,700 M</p>
+              <div class="travelled-buttons">
+                <a href="https://www.google.com/maps/place/Muktinath+33100/@28.8004054,83.5173875,10z/data=!3m1!4b1!4m15!1m8!3m7!1s0x39be6c7eb19f2ab7:0x2c40a8c5a03d3c04!2sMustang!3b1!8m2!3d28.9985065!4d83.8473015!16zL20vMDhjbHNi!3m5!1s0x39be13dbfa97a191:0xe585266cbba560a0!8m2!3d28.8017498!4d83.8579053!16s%2Fg%2F121l5sp_?entry=ttu">
+                  <ion-icon name="map"></ion-icon> Map
+                </a>
+                <a href="mustang.html">
+                  <ion-icon name="blog"></ion-icon> Blog
+                </a>
+              </div>
+            </li>
+          
+            <li class="travelled-item active" data-filter-item data-category="China">
+              <a href="https://www.beyondtinnitus.online/">
+                <figure class="travelled-img loading">
+                  <img src="./assets/images/pokhara.jpg" loading="lazy">
+                </figure>
+              </a>
+              <h3 class="travelled-title">Pokhara</h3>
+              <p class="travelled-category">Nepal</p>
+              <p class="travelled-development">822 M</p>
+              <div class="travelled-buttons">
+                <a href="https://www.google.com/maps/place/Pokhara/@28.2293272,83.6269607,10z/data=!3m1!4b1!4m6!3m5!1s0x3995937bbf0376ff:0xf6cf823b25802164!8m2!3d28.2095831!4d83.9855674!16zL20vMDQwZHgz?entry=ttu">
+                  <ion-icon name="map"></ion-icon> Map
+                </a>
+                <a href="">
+                  <ion-icon name="blog"></ion-icon> <!--add blog button after making-->
+                </a>
+              </div>
+            </li>
+            <li class="travelled-item active" data-filter-item data-category="China">
+              <a href="./assets/images/jomsom2.jpeg">
+                <figure class="travelled-img loading">
+                  <img src="./assets/images/jomsom2.jpeg" loading="lazy">
+                </figure>
+              </a>
+              <h3 class="travelled-title">Jomsom</h3>
+              <p class="travelled-category">Nepal</p>
+              <p class="travelled-development">2,743 M </p>
+              <div class="travelled-buttons">
+                <a href="https://www.google.com/maps/place/Jomsom/@28.7870894,83.4501928,10z/data=!3m1!4b1!4m6!3m5!1s0x39be0e42b3323685:0xb78689d6f4ff1019!8m2!3d28.7746477!4d83.7730237!16s%2Fm%2F03cpg01?entry=ttu">
+                  <ion-icon name="map"></ion-icon> Map
+                </a>
+                <a href="">
+                  <ion-icon name="blog"></ion-icon> <!-- add blog buttton when made-->
+                </a>
+              </div>
+            </li>
+           
+
+          <!-- Next Page -->
+          
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="more" data-page="more">
+
+      
+          <h2 class="h2 article-title">Blogs</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="mustang.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/mustang.jpg" alt="mustang" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">" Route to Nepal's Hidden Gem</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Kathmandu to Mustang</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">mustang>
+                  <p class="blog-text">Unveiling the Mystique: A Comprehensive Travel Guide to Lower Mustang - Trekking, Adventure, and Cultural Marvels in Nepal's Hidden Gem
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+           
+              </a>
+            </li>
+          </ul>
+
+          <!-- Next Page -->
+          <div class="pagination-box">
+            <button class="pagination-button" data-nav-link data-target-section="contact">Next ></button>
+          </div>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!-- CONTACT-->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <!-- Copy Email Address -->
+        <div class="content-card">
+          <h3 class="h3 form-title" align="center">Email:</h3>
+          <div class="container">
+            <div class="email-field">
+              <div class="email-text">gairebishal5@gmail.com</div>
+              <button class="copy-button" onclick="copyEmail()">Copy</button>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <!-- Calendly popup widget -->
+       
+
+        <!-- Social Links -->
+        <div class="content-card">
+          <h3 class="h3 form-title" align="center">Socials:</h3>
+
+          <ul class="social-list">
+
+
+            <li class="social-item">
+              <a href="https://www.facebook.com/profile.php?id=100073507803580&mibextid=JRoKGi" class="socials-item">
+                <img src="./assets/images/socials/linkedin.png"></img>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.instagram.com/bishalgaire075?igsh=NnR6aWMzY3VuNmR6" class="socials-item">
+                <img src="./assets/images/socials/instagram.png"></img>
+              </a>
+            </li>
+
+            
+
+          </ul>
+        </div>
+        <br>
+
+        <!-- Donations -->
+
+       
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
