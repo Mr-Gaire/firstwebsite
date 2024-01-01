@@ -309,7 +309,7 @@ setTimeout(function () {
 const text = Array.from({ length: 20 }, () =>
   Array.from({ length: 16 }, () => Math.round(Math.random())).join("")
 );
-text.push("Hello, World !");
+text.push("यथा दृष्टि तथा शृष्टि !");
 
 const mottoElement = document.getElementById("motto");
 let index = 0;
@@ -317,7 +317,7 @@ let index = 0;
 function flipmotto() {
   mottoElement.textContent = text[index];
 
-  if (text[index] === "Hello, World !") {
+  if (text[index] === "यथा दृष्टि तथा शृष्टि !") {
     clearInterval(intervalId);
   }
 
