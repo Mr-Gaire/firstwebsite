@@ -306,25 +306,65 @@ setTimeout(function () {
 }, 1000);
 
 // Motto Animation
+// Motto Animation
 const text = Array.from({ length: 20 }, () =>
   Array.from({ length: 16 }, () => Math.round(Math.random())).join("")
 );
 text.push("यथा दृष्टि तथा शृष्टि !");
+text.push("As one sees, so is the creation !");
 
 const mottoElement = document.getElementById("motto");
-let index = 0;
 
-function flipmotto() {
-  mottoElement.textContent = text[index];
+function displayLetters(textToDisplay, delay) {
+  const letters = textToDisplay.split("");
+  let index = 0;
 
-  if (text[index] === "यथा दृष्टि तथा शृष्टि !") {
-    clearInterval(intervalId);
+  function displayNextLetter() {
+    if (index < letters.length) {
+      mottoElement.textContent += letters[index];
+      index++;
+      setTimeout(displayNextLetter, delay);
+    }
   }
 
-  index = (index + 1) % text.length;
+  displayNextLetter();
 }
 
-const intervalId = setInterval(flipmotto, 100);
+// Display mathematical numbers initially
+const mathNumbers = Array.from({ length: 10 }, (_, index) => index);
+mottoElement.textContent = mathNumbers.join(" ");
+
+// Function to clear content and display text with doubled animation speed
+function displayTextWithDoubleSpeed(textToDisplay) {
+  mottoElement.textContent = ""; // Clear the content before displaying new text
+  displayLetters(textToDisplay, 250); // Doubled animation speed (currently 250 milliseconds)
+}
+
+// Display "Hello, World!" after a short delay
+setTimeout(() => {
+  displayTextWithDoubleSpeed("यथा दृष्टि तथा शृष्टि !");
+}, mathNumbers.length * 250);
+
+// Display "As one sees, so is the creation !" after a short delay
+setTimeout(() => {
+  displayTextWithDoubleSpeed("As one sees, so is the creation !");
+}, (mathNumbers.length + "As one sees, so is the creation !".length) * 250);
+
+
+// Expanding About Text
+function toggleText() {
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("toggle-button");
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "block";
+    btnText.innerHTML = "&uarr; &nbsp; &nbsp; Hide text &nbsp; &nbsp; &uarr;";
+  } else {
+    moreText.style.display = "none";
+    btnText.innerHTML = "&darr; &nbsp; &nbsp; Show more &nbsp; &nbsp; &darr;";
+  }
+}
+
 
 // Expanding About Text
 function toggleText() {
